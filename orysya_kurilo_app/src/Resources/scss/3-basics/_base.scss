@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  overflow: hidden;
+  margin-top: 116px;
+  display: grid;
+  grid-template-rows: minmax(80vh, min-content) min-content 40vw repeat(
+      3,
+      min-content
+    );
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr) [full-end];
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: minmax(80vh, min-content) min-content repeat(
+        3,
+        min-content
+      );
+  }
+  @media only screen and (max-width: $bp-xsSmall) {
+    margin-top: 85px;
+  }
+}
+.container-two {
+  overflow: hidden;
+  margin-top: 116px;
+  display: grid;
+  grid-template-rows: minmax(15vh, min-content) min-content repeat(
+      3,
+      min-content
+    );
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.image_upload_container {
+  position: relative;
+}
+
+.image_upload_container .remove {
+  top: 0;
+  position: absolute;
+  right: 0;
+  background: $color-primary;
+  color: #ffffff;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.not_found_container {
+  text-align: center;
+  margin-top: 250px;
+  padding: 20px;
+  background-size: 5px 5px !important;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 90px;
+  font-family: "Righteous", cursive;
+  color: $color-secondary;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+a:hover {
+  color: $color-primary;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}

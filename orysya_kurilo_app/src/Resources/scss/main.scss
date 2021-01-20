@@ -1,0 +1,40 @@
+//1-HELPERS
+@import "1-helpers/variables";
+@import "1-helpers/mixins";
+
+//variable, functions, mixins
+//2-TOOLS
+//normalize, slick, smooth, animate, 3rd party code
+//3-BASICS
+@import "3-basics/base";
+@import "3-basics/buttons";
+@import "3-basics/typography";
+//buttons, links, typography, base, reset, colors
+
+//4-LAYOUT
+@import "4-layouts/header";
+@import "4-layouts/footer";
+@import "4-layouts/properties";
+//5-MODULES
+
+//6-PAGES
+
+//Admin
+@import "6-pages/admin/admin";
+@import "6-pages/admin/properties";
+
+//Homepage
+@import "6-pages/homepage/realtor";
+@import "6-pages/homepage/hero";
+@import "6-pages/homepage/features";
+@import "6-pages/homepage/story";
+@import "6-pages/homepage/contact";
+
+//Property Route
+@import "6-pages/property/property";
+
+//The Properties route
+@import "6-pages/theproperties/theproperties";
+
+//SignIn
+@import "6-pages/signin/signin";

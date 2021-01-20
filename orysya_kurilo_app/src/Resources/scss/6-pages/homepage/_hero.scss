@@ -1,0 +1,44 @@
+.hero {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.93),
+      rgba($color-secondary, 0.93)
+    ),
+    url(../../../images/hero.jpg);
+
+  background-size: cover;
+  background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
+  // height: 80vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem;
+  }
+  @media only screen and (max-width: $bp-xsSmall) {
+    padding: 4rem;
+  }
+
+  &__logo {
+    height: 10rem;
+    justify-self: center;
+  }
+
+  &__btn {
+    align-self: start;
+    justify-self: start;
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 5rem;
+    }
+  }
+}

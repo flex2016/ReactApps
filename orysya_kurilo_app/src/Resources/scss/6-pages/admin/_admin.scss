@@ -1,0 +1,62 @@
+/*=============================
+         ADMIN
+===============================*/
+
+.admin__container {
+  margin-top: 116px;
+  display: flex;
+  @media only screen and (max-width: $bp-xsSmall) {
+    margin-top: 85px;
+  }
+}
+
+.admin__container .admin__left_nav {
+  min-height: 100vh;
+  width: 200px;
+  background: $color-secondary;
+  border-right: 2px solid $color-secondary-2;
+  @media only screen and (max-width: $bp-small) {
+    width: 120px;
+  }
+}
+.admin__left_nav a {
+  text-decoration: none;
+}
+.admin__nav {
+  color: $color-white;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  border-bottom: 1px solid #353535;
+  cursor: pointer;
+}
+
+.admin__nav:hover {
+  color: $color-primary;
+}
+
+.admin__container .admin__right {
+  flex-grow: 1;
+}
+
+.user__dashboard {
+  font-size: 1rem;
+  font-family: "Righteous", cursive;
+  color: $color-black;
+  text-align: center;
+  //margin-top: 200px;
+}
+.user__charts {
+  height: 400px;
+  width: 60%;
+  @media only screen and (max-width: $bp-medium) {
+    width: 400px;
+  }
+  @media only screen and (max-width: $bp-small) {
+    height: 300px;
+    width: 280px;
+  }
+  @media only screen and (max-width: $bp-xsSmall) {
+    height: 250px;
+    width: 250px;
+  }
+}

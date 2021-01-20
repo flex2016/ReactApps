@@ -1,0 +1,131 @@
+.login {
+  &__img {
+    grid-column: full-start / col-end 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 15rem;
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+      margin-left: 10rem;
+    }
+  }
+  &__form {
+    grid-column: col-start 5 / full-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5rem;
+    width: 100%;
+    @media only screen and (max-width: $bp-large) {
+      grid-column: center-start / center-end;
+      margin-left: 0;
+    }
+    @media only screen and (max-width: $bp-small) {
+      grid-column: full-start / full-end;
+      margin: 5rem 0 5rem 0;
+    }
+  }
+  &__svg {
+    width: 800px;
+    height: 400px;
+    z-index: 10;
+    @media only screen and (max-width: $bp-largest) {
+      width: 600px;
+      height: 300px;
+    }
+  }
+  &__title {
+    margin: 1rem 0;
+    color: $color-secondary;
+    text-transform: uppercase;
+    font-size: 3.9rem;
+  }
+}
+
+#broken-line-left,
+#broken-line-right {
+  animation: rotate 40s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#roof-dark {
+  animation: kaboom 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#left-trees,
+#right-tree {
+  animation: kaboom 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes hideshow {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes kaboom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(0px);
+  }
+  // 25% {
+  //   transform: translateY(-50px);
+  // }
+  50% {
+    transform: translateY(-170px);
+  }
+  // 75% {
+  //   transform: translateY(-130px);
+  // }
+  100% {
+    transform: translateY(0px);
+  }
+}

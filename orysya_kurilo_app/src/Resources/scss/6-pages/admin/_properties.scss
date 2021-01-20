@@ -1,0 +1,53 @@
+//admin index
+
+.admin_progress {
+  text-align: center;
+  margin: 20rem 0px;
+}
+
+.properties_tag_red {
+  font-weight: 700;
+  color: #f44336;
+}
+
+.properties_tag_green {
+  font-weight: 700;
+  color: #4caf50;
+}
+
+.MuiTableCell-root.MuiTableCell-head {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.MuiTableCell-root.MuiTableCell-body,
+.MuiTableCell-root.MuiTableCell-body a {
+  font-size: 1.2rem;
+}
+
+//Admin properties add/edit
+.editproperty__wrapper,
+.editrentals_dialog_wrapper {
+  padding: 20px;
+  width: 100%;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form__fields {
+  flex-grow: 1;
+  width: 25rem;
+  margin: 2rem;
+}
+
+.label_inputs {
+  font-size: 20px;
+  margin: 10px 15px 10px 0px;
+  font-weight: 300;
+  color: $color-secondary;
+  background: $color-primary;
+  padding: 5px;
+  display: inline-block;
+}

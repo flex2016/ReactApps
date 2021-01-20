@@ -1,0 +1,84 @@
+{
+  "properties": {
+    "-LEmaPHHgI3SgqTKu9u6": {
+      "name": "Beautiful Familiy House",
+      "date": "2018-12-13",
+      "image": "house-1",
+      "city": "USA",
+      "address": "15 washington st",
+      "rooms": "5",
+      "bathrooms": "5",
+      "area": "510",
+      "price": "1205100",
+      "sold": "No"
+    },
+    "-LEmaPHWXzdUZ_5ohJPa": {
+      "name": "Modern Glass Villa",
+      "date": "2018-12-13",
+      "image": "house-2",
+      "city": "Boston",
+      "address": "15 washington st",
+      "rooms": "10",
+      "bathrooms": "5",
+      "area": "310",
+      "price": "2319000",
+      "sold": "Yes"
+    },
+    "-LEmaPHYAYfVEsQETNZc": {
+      "name": "Cozy Country House",
+      "date": "2018-12-13",
+      "image": "house-3",
+      "city": "NY",
+      "address": "15 washington st",
+      "rooms": "15",
+      "bathrooms": "6",
+      "area": "415",
+      "price": "1415999",
+      "sold": "No"
+    },
+    "-LEmaPHZ37QJL1IWficV": {
+      "name": "Large Rustical Villa",
+      "date": "2018-12-13",
+      "image": "house-4",
+      "city": "dETROIT",
+      "address": "15 washington st",
+      "rooms": "6",
+      "bathrooms": "5",
+      "area": "266",
+      "price": "2660050",
+      "sold": "No"
+    },
+    "-LEmaPHecaATk_4CsrUS": {
+      "name": "Majestic Palace House",
+      "date": "2018-12-13",
+      "image": "house-5",
+      "city": "Boston",
+      "address": "15 washington st",
+      "rooms": "8",
+      "bathrooms": "5",
+      "area": "308",
+      "price": "3080506",
+      "sold": "No"
+    },
+    "-LEmaPHoZMzLDoLOPaC7": {
+      "name": "Modern Familiy Apartment",
+      "date": "2018-12-13",
+      "image": "house-6",
+      "city": "Boston",
+      "address": "15 washington st",
+      "rooms": "10",
+      "bathrooms": "5",
+      "area": "510",
+      "price": "2503000",
+      "sold": "Yes"
+    }
+  },
+  "contact": {
+    "-LEmaPHHgI3SgqTKu9u6": {
+      "name": "Beautiful Familiy House",
+      "email": "francis@gmail.com",
+      "request": "Buy",
+      "message": "Hello, I awant to purchase a house today"
+    }
+  }
+}
